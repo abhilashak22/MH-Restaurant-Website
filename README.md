@@ -13,8 +13,5 @@ A fully responsive, multi-page restaurant website developed as part of the *Comp
 - *CSS3* (Styling & Responsiveness)
 - *JavaScript* (Form Logic & Validation)
 
-## 📸 Screenshots
-(You can add your lab output screenshots here later!)
-
 ---
 Developed by *Abhilasha*
