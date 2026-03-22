@@ -1,0 +1,129 @@
+/* 1. GENERAL LAYOUT (Keep this for the whole site) */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    line-height: 1.6; 
+    background-color: #fffaf0; /* Light cream background */
+}
+
+nav { 
+    background: #d35400; /* Saffron/Orange theme */
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 15px 5%; 
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+}
+
+nav ul li { margin-left: 20px; }
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* 2. PAGE CONTENT */
+.container { 
+    padding: 40px 10%; 
+    max-width: 900px; 
+    margin: auto; 
+}
+
+.hero { 
+    text-align: center; 
+    padding: 100px 20px; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    color: white;
+}
+
+.btn { 
+    background: #e67e22; 
+    color: white; 
+    padding: 12px 25px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* 3. MAHARASHTRIAN MENU CARD STYLING */
+.menu-section {
+    background: #fff;
+    border: 2px solid #e67e22;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #edbb99;
+    padding: 15px 0;
+}
+
+.menu-item:last-child { border-bottom: none; }
+
+.menu-item h3 { 
+    margin: 0; 
+    color: #2c3e50; 
+    font-size: 1.2rem;
+}
+
+.menu-item p { 
+    margin: 5px 0 0 0; 
+    color: #7f8c8d; 
+    font-size: 0.9rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #d35400;
+    font-size: 1.1rem;
+}
+
+/* 4. FORMS (Reservation Page) */
+input, button { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+button { 
+    background: #27ae60; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 5. RESPONSIVENESS (Mobile View) */
+@media (max-width: 600px) {
+    nav { flex-direction: column; }
+    nav ul { 
+        padding: 0; 
+        margin-top: 15px; 
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li { 
+        margin: 10px 0; 
+    }
+    .menu-item { flex-direction: column; }
+    .price { margin-top: 5px; }
+}

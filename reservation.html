@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h2>Spice Garden</h2></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="reservation.html">Book Table</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Table Reservation</h2>
+        <form id="resForm" onsubmit="return validateForm(event)">
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+            <input type="date" id="resDate" required>
+            <input type="time" id="resTime" required>
+            <input type="number" id="guests" placeholder="Number of Guests" min="1" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
